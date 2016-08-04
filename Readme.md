@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Cristina Chiorov](https://up.htmlacademy.ru/htmlcss/14/user/158405).
-* Наставник: `Гоша Егорян`.
+* Наставник: [Гоша Егорян](https://htmlacademy.ru/profile/id85633).
 
 ---
 
