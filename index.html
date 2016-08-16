@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <script src="http://maps.googleapis.com/maps/api/js"></script>
-<script>
-function initialize() {
-  var mapProp = {
-    center:new google.maps.LatLng(51.508742,-0.120850),
-    zoom:5,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
     <meta charset="utf-8">
-    <title>Gllacy Ice cream Shop</title>
+    <title>Gllacy Ice cream</title>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapProp = {
+        center:new google.maps.LatLng(51.508742,-0.120850),
+        zoom:5,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
   </head>
   <body>
     <main class="container">
-    <header class="main-header">
-      <div class="container">
+
+      <div class="header">
         <nav class="main-navigation">
           <ul>
-            <a href="#"><img src="" alt="glaccy"></a>
+            <li>
+              <img src="" alt="glaccy">
+            </li>
             <li>
               <a href="#">Каталог</a>
             </li>
@@ -40,100 +42,117 @@ google.maps.event.addDomListener(window, 'load', initialize);
           <input type="submit" value="Пусто">
         </form>
       </div>
-          <p class="open_hours_tel">
-            С 10 до 20, ежедневно<br>
-            8 812 450-25-25  </p>
-            <h1 class="advertising">Крем-брюле и пломбир с малиновым джемом</h1>
-            <a class="btn" href="#">Давайте оба!</a>
-      <div class="index-content-left">
-            <h2 class="index-content-title">Малинка даром!</h2>
-            <p class="news-preview">
-            При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
-            малинового варенья бесплатно.</p>
-            <a class="btn" href="#">Хочу варенье!</a>
-      </div>
-      <div class="index-content-right">
-            <h2 class="index-content-title">Шоколадки даром!</h2>
-            <p class="news-preview">
-            При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной
-            присыпки совершенно бесплатно.</p>
-            <a class="btn" href="#">Хочу шоколадки!</a>
-      </div><br
-      <div class="icecreamrange">
-        <article class="icecreamrange1">
-          <img src="http://placehold.it/150x100">
-            <h1 class="price">310/кг</h1>
-              <u>Сливочное с апельсиновым джемом и цитрусовой стружкой</u>
-        </article>
-        <article class="icecreamrange2">
-          <img src="http://placehold.it/150x100">
-            <h1 class="price">380/кг</h1>
-              <u>Сливочно-кофейное с кусочками шоколада</u>
-        </article>
-        <article class="icecreamrange3">
-          <img src="http://placehold.it/150x100">
-            <h1 class="price">355/кг</h1>
-             <u>Сливочно-клубничное с присыпкой из белого шоколада</u>
-        </article>
-        <article class="icecreamrange4">
-            <img src="http://placehold.it/150x100">
-            <h1 class="price">415/кг</h1>
-             <u>Сливочное крем-брюле с карамельной подливкой</u>
-        </article>
-      </div>
-        <section class="aboutus_title">
-          <b class="aboutus_entry">Магазин Глейси  — это онлайн и офлайн магазин
-            по продаже мороженого собственного производства на развес</b>
-            <ul class="aboutus_left">
-              <li>
-                <p>Все наше мороженое изготавливается на собственном производстве, с
-                  использованием современного оборудования и проверенных временем
-                  технологий.
-                </p>
-              </li>
-              <li>
-                <p>Для приготовления мороженого используются настоящие сливки и
-                  молоко высочайшего качества. Все дополнительные ингредиенты и
-                  добавки произведены из натурального, экологически чистого сырья
-                </p>
-              </li>
-            </ul>
-            <ul class="aboutus_right">
-              <li>
-                <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств
-                  и компаний, с которыми нас связывает долговременное сотрудничество.
-                </p>
-              </li>
-              <li>
-                <p>Доставка нашего мороженого до заказчиков осуществляется в
-                  специальном термопаке, который не дает мороженому растаять в пути и
-                  позволяет сохранить превосходный вкус.
-                </p>
-              </li>
-            </ul>
-          </section>
-        <article  class="blognews">
-          <h3>Новое в нашем блоге</h3>
-            <a class="serving_ways"href="#">
-            <u>10  способов сервировки фруктовых щербетов к столу</u>
-            </a>
-        </article>
-        <article class="subscribe">
-          <h3 class="subscribe_text">Подпишитесь на нашу сладкую рассылку и будете
-          всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не
-          спамить и не слать всякой не нужной ерунды. Честно =)
-          </h3>
-         <form type"email">
-           <input class="email" value="Электронная почта">
-         </form>
-        <button class="btn_send">Отправить</button>
 
-        </article>
+      <p class="open_hours_tel">
+        С 10 до 20, ежедневно<br>
+        8 812 450-25-25
+      </p>
+
+      <div class="slider">
+        <h1 class="advertise">Крем-брюле и пломбир с малиновым джемом</h1>
+        <button type="submit">Давайте оба!</button>
+      </div>
+
+      <article class="index-content-left">
+        <h2>Малинка даром!</h2>
+            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
+              малинового варенья бесплатно.
+            </p>
+          <button type="button">Хочу варенье!</button>
+      </article>
+
+      <article class="index-content-right">
+        <h2>Шоколадки даром!</h2>
+            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной
+              присыпки совершенно бесплатно.
+            </p>
+          <button type="button">Хочу шоколадки!</button>
+      </article>
+
+    <div class="icecreamrange">
+
+        <div class="icecreamrange1">
+          <img src="http://placehold.it/150x100">
+            <span class="price">310/кг</span>
+            <u>Сливочное с апельсиновым джемом и цитрусовой стружкой</u>
+        </div>
+
+        <div class="icecreamrange2">
+          <img src="http://placehold.it/150x100">
+            <span class="price">380/кг</span>
+            <u>Сливочно-кофейное с кусочками шоколада</u>
+        </div>
+
+        <div class="icecreamrange3">
+          <img src="http://placehold.it/150x100">
+            <span class="price">355/кг</span>
+            <u>Сливочно-клубничное с присыпкой из белого шоколада</u>
+        </div>
+
+        <div class="icecreamrange4">
+          <img src="http://placehold.it/150x100">
+            <span class="price">415/кг</span>
+            <u>Сливочное крем-брюле с карамельной подливкой</u>
+        </div>
+    </div>
+
+      <section class="aboutus_title">
+        <b class="aboutus_entry">Магазин Глейси  — это онлайн и офлайн магазин
+        по продаже мороженого собственного производства на развес</b>
+        <ul class="aboutus_left">
+          <li>
+            <p>Все наше мороженое изготавливается на собственном производстве, с
+            использованием современного оборудования и проверенных временем
+            технологий.
+            </p>
+          </li>
+          <li>
+            <p>Для приготовления мороженого используются настоящие сливки и
+            молоко высочайшего качества. Все дополнительные ингредиенты и
+            добавки произведены из натурального, экологически чистого сырья
+            </p>
+          </li>
+        </ul>
+        <ul class="aboutus_right">
+          <li>
+            <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств
+            и компаний, с которыми нас связывает долговременное сотрудничество.
+            </p>
+          </li>
+          <li>
+            <p>Доставка нашего мороженого до заказчиков осуществляется в
+            специальном термопаке, который не дает мороженому растаять в пути и
+            позволяет сохранить превосходный вкус.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <article  class="blognews">
+        <h3>Новое в нашем блоге</h3>
+          <a class="serving_ways"href="#">
+            <u>10  способов сервировки фруктовых щербетов к столу</u>
+          </a>
+      </article>
+
+      <article class="subscribe">
+        <h3 class="subscribe_text">Подпишитесь на нашу сладкую рассылку и будете
+        всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не
+        спамить и не слать всякой не нужной ерунды. Честно =)
+        </h3>
+        <form type"email">
+          <input class="email" value="Электронная почта">
+        </form>
+       <button class="btn_send">Отправить</button>
+      </article>
+
       <div class="map">
           <a class="map" href="#"></a>
       <div class="map_contacts">
-          <p>Адрес главного офиса офлайн магазина:</p>
-          <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+          <p>Адрес главного офиса
+            офлайн магазина:</p>
+          <b>ул. Большая Конюшенная 19/8, <br>
+            Санкт-Петербург</b><br>
           <p>Для заказов по телефону:<br>
           <b>8 812 450-25-2</b> <br>
              (с 10 до 20 ежедневно)
@@ -144,13 +163,14 @@ google.maps.event.addDomListener(window, 'load', initialize);
     </main>
       <div id="googleMap" style="width:500px;height:380px;"></div>
 
+    </main>
 <footer class="main_footer">
   <section class="footer-social">
-    <p>Давайте дружить!</p>
-    <a class="social-btn social-btn-tw" href="#" img src="#"></a>
-    <a class="social-btn social-btn-inst" href="#" img src="#"></a>
-    <a class="social-btn social-btn-fb" href="#" img src="#"></a>
-    <a class="social-btn social-btn-vk" href="#" img src="#"></a>
+
+    <a class="social-btn social-btn-tw" href="#" img src="#">TW</a>
+    <a class="social-btn social-btn-inst" href="#" img src="#">INST</a>
+    <a class="social-btn social-btn-fb" href="#" img src="#">FB</a>
+    <a class="social-btn social-btn-vk" href="#" img src="#">VK</a>
   </section>
   <section class="info">
     <ul class="info_right">
@@ -167,5 +187,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
     <p>Сделано в HTML Academy © 2016</p>
   </section>
 </footer>
+
   </body>
 </html>
